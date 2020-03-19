@@ -40,39 +40,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         /*String buttonDestination = settingsData.getGrade();
 
-        if (buttonDestination == "SettingsActivity") {
+        if (buttonDestination.equals("SettingsActivity")) {
             button.setText(R.string.settings);
             Intent settingsIntent = new Intent(this, SettingsActivity.class);
             startActivity(settingsIntent);
-        } else if (buttonDestination == "Grade1Activity") {
+        } else if (buttonDestination.equals("Grade1Activity")) {
             button.setText(R.string.menu_g1);
             Intent grade1Intent = new Intent(this, MainActivity.class);
             startActivity(grade1Intent);
-        } else if (buttonDestination == "Grade2Activity") {
+        } else if (buttonDestination.equals("Grade2Activity")) {
             button.setText(R.string.menu_g2);
             Intent grade2Intent = new Intent(this, MainActivity.class);
             startActivity(grade2Intent);
-        } else if (buttonDestination == "Grade3Activity") {
+        } else if (buttonDestination.equals("Grade3Activity")) {
             button.setText(R.string.menu_g3);
             Intent grade3Intent = new Intent(this, MainActivity.class);
             startActivity(grade3Intent);
-        } else if (buttonDestination == "Grade4Activity") {
+        } else if (buttonDestination.equals("Grade4Activity")) {
             button.setText(R.string.menu_g4);
             Intent grade4Intent = new Intent(this, MainActivity.class);
             startActivity(grade4Intent);
-        } else if (buttonDestination == "Grade5Activity") {
+        } else if (buttonDestination.equals("Grade5Activity")) {
             button.setText(R.string.menu_g5);
             Intent grade5Intent = new Intent(this, MainActivity.class);
             startActivity(grade5Intent);
-        } else if (buttonDestination == "Grade6Activity") {
+        } else if (buttonDestination.equals("Grade6Activity")) {
             button.setText(R.string.menu_g6);
             Intent grade6Intent = new Intent(this, MainActivity.class);
             startActivity(grade6Intent);
-        } else if (buttonDestination == "Grade7Activity") {
+        } else if (buttonDestination.equals("Grade7Activity")) {
             button.setText(R.string.menu_g7);
             Intent grade7Intent = new Intent(this, MainActivity.class);
             startActivity(grade7Intent);
-        } else if (buttonDestination == "Grade8Activity") {
+        } else if (buttonDestination.equals("Grade8Activity")) {
             button.setText(R.string.menu_g8);
             Intent grade8Intent = new Intent(this, Grade8Activity.class);
             startActivity(grade8Intent);

@@ -1,7 +1,6 @@
 package com.myapptest.abrsmpianoscalesandsightreading;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,9 +14,6 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 public class SettingsActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
-    /*final SharedPreferences settings = getSharedPreferences(getString(R.string.pref_key), MODE_PRIVATE);
-    final SharedPreferences.Editor settingsE = settings.edit();*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +31,6 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
         Switch groupSwitch = findViewById(R.id.groupSwitch);
         Switch ssSwitch = findViewById(R.id.ssSwitch);
 
-        /*settingsE.putString(getString(R.string.pref_grade), getString(R.string.activity_g8));
-        settingsE.putBoolean(getString(R.string.pref_sors), false);
-        settingsE.putBoolean(getString(R.string.pref_g12), false);
-        settingsE.apply();
-
-        groupSwitch.setChecked(settings.getBoolean(getString(R.string.pref_g12), false));
-        ssSwitch.setChecked(settings.getBoolean(getString(R.string.pref_sors), false));*/
-
         groupSwitch.setChecked(SaveSettings.getG12());
         ssSwitch.setChecked(SaveSettings.getSors());
 
@@ -50,41 +38,31 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SaveSettings.setG12(isChecked);
-                //settingsE.putBoolean(getString(R.string.pref_g12), isChecked);
             }
         });
         ssSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SaveSettings.setSors(isChecked);
-                //settingsE.putBoolean(getString(R.string.pref_sors), isChecked);
             }
         });
     }
 
-    /*public String getGrade() {
-        return settings.getString(getString(R.string.pref_grade), getString(R.string.activity_g8));
-    }
-
     public boolean getG12() {
-        return settings.getBoolean(getString(R.string.pref_g12), false);
+        return SaveSettings.getG12();
     }
 
     public boolean getSors() {
-        return settings.getBoolean(getString(R.string.pref_sors), false);
-    }
-
-    public void setGrade(String message) {
-        settingsE.putString(getString(R.string.pref_grade), message);
+        return SaveSettings.getSors();
     }
 
     public void setG12(Boolean message) {
-        settingsE.putBoolean(getString(R.string.pref_g12), message);
+        SaveSettings.setG12(message);
     }
 
     public void setSors(Boolean message) {
-        settingsE.putBoolean(getString(R.string.pref_sors), message);
-    }*/
+        SaveSettings.setSors(message);
+    }
 
     // Close Menu When Back Button is Pressed
     @Override
