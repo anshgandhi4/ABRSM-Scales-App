@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Grade8Activity">
+
+    <Button
+        android:id="@+id/regularScalesButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="regularScales"
+        android:text="@string/regular_scales"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scalesThirdApartButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="scalesAThirdApart"
+        android:text="@string/scales_a_third_apart"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regularScalesButton" />
+
+    <Button
+        android:id="@+id/scalesSixthApartButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="scalesASixthApart"
+        android:text="@string/scales_a_sixth_apart"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scalesThirdApartButton" />
+
+    <Button
+        android:id="@+id/legatoScalesInThirdsButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="legatoScalesInThirds"
+        android:text="@string/legato_scales_in_thirds"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scalesSixthApartButton" />
+
+    <Button
+        android:id="@+id/chromaticScalesMinorThirdApartButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="chromaticScalesAMinorThirdApart"
+        android:text="@string/chromatic_scales_a_minor_third_apart"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legatoScalesInThirdsButton" />
+
+    <Button
+        android:id="@+id/chromaticScaleMinorThirdsButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="chromaticScaleInMinorThirds"
+        android:text="@string/chromatic_scale_in_minor_thirds"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chromaticScalesMinorThirdApartButton" />
+
+    <Button
+        android:id="@+id/wholeToneScaleButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="wholeToneScale"
+        android:text="@string/whole_tone_scale"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chromaticScaleMinorThirdsButton" />
+
+    <Button
+        android:id="@+id/arpeggiosButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="arpeggios"
+        android:text="@string/arpeggios"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wholeToneScaleButton" />
+
+    <Button
+        android:id="@+id/dominantSeventhsButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="dominantSevenths"
+        android:text="@string/dominant_sevenths"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arpeggiosButton" />
+
+    <Button
+        android:id="@+id/diminishedSeventhsButton"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:onClick="diminishedSevenths"
+        android:text="@string/diminished_sevenths"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dominantSeventhsButton" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_menu_home"
+        android:checkableBehavior="single"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_g1"
+        android:icon="@drawable/ic_menu_g1"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g1" />
+    <item
+        android:id="@+id/nav_g2"
+        android:icon="@drawable/ic_menu_g2"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g2" />
+    <item
+        android:id="@+id/nav_g3"
+        android:icon="@drawable/ic_menu_g3"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g3" />
+    <item
+        android:id="@+id/nav_g4"
+        android:icon="@drawable/ic_menu_g4"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g4" />
+    <item
+        android:id="@+id/nav_g5"
+        android:icon="@drawable/ic_menu_g5"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g5" />
+    <item
+        android:id="@+id/nav_g6"
+        android:icon="@drawable/ic_menu_g6"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g6" />
+    <item
+        android:id="@+id/nav_g7"
+        android:icon="@drawable/ic_menu_g7"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g7" />
+    <item
+        android:id="@+id/nav_g8"
+        android:icon="@drawable/ic_menu_g8"
+        android:checkableBehavior="single"
+        android:title="@string/menu_g8" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:checkableBehavior="single"
+        android:title="@string/settings" />
+</menu>
