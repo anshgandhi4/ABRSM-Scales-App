@@ -40,8 +40,10 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <string name="legato_scales_in_thirds">Legato Scales In Thirds</string>
+    <string name="staccato_scales_in_thirds">Staccato Scales In Thirds</string>
     <string name="staccato_scales_in_sixths">Staccato Scales In Sixths</string>
     <string name="scales_a_third_apart">Scales A Third Apart</string>
+    <string name="staccato_scales">Staccato Scales</string>
     <string name="chromatic_scales_a_minor_third_apart">Chromatic Scales A Minor Third Apart</string>
     <string name="scales_a_sixth_apart">Scales A Sixth Apart</string>
     <string name="chromatic_scale_in_minor_thirds">Chromatic Scale In Minor Thirds</string>
@@ -67,13 +69,14 @@
     <string name="second_inversion">Second</string>
     <string name="_88">88 𝅗𝅥</string>
     <string name="_80">80 𝅗𝅥</string>
-    <string name="_60">60 𝅗𝅥</string>
-    <string name="_56">56 𝅗𝅥</string>
-    <string name="_46">46 𝅗𝅥</string>
     <string name="_76">76 𝅗𝅥</string>
     <string name="_66">66 𝅗𝅥</string>
     <string name="_63">63 𝅗𝅥</string>
+    <string name="_60">60 𝅗𝅥</string>
+    <string name="_56">56 𝅗𝅥</string>
     <string name="_52">52 𝅗𝅥</string>
+    <string name="_50">50 𝅗𝅥</string>
+    <string name="_46">46 𝅗𝅥</string>
     <string name="_4_octaves">4 Octaves</string>
     <string name="_2_octaves">2 Octaves</string>
     <string name="a">A</string>
@@ -99,6 +102,12 @@
 
     <string name="go_to_grade_8">Go To Grade 8</string>
     <string name="go_to_grade_7">Go To Grade 7</string>
+    <string name="go_to_grade_6">Go To Grade 6</string>
+    <string name="go_to_grade_5">Go To Grade 5</string>
+    <string name="go_to_grade_4">Go To Grade 4</string>
+    <string name="go_to_grade_3">Go To Grade 3</string>
+    <string name="go_to_grade_2">Go To Grade 2</string>
+    <string name="go_to_grade_1">Go To Grade 1</string>
     <string name="randomize_scales">Randomize Scales</string>
     <string name="pref_key">preferenceKeys</string>
     <string name="pref_grade">gradeKey</string>

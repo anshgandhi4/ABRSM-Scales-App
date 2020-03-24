@@ -99,7 +99,7 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
             Intent g5Intent = new Intent(this, MainActivity.class);
             startActivity(g5Intent);
         } else if (id == R.id.nav_g6) {
-            Intent g6Intent = new Intent(this, MainActivity.class);
+            Intent g6Intent = new Intent(this, Grade6Activity.class);
             startActivity(g6Intent);
         } else if (id == R.id.nav_g7) {
             Intent g7Intent = new Intent(this, Grade7Activity.class);

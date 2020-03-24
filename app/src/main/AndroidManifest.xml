@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Grade7Arpeggios"></activity>
+        <activity android:name=".Grade6RegularScales"></activity>
+        <activity android:name=".Grade6Activity" />
+        <activity android:name=".Grade7Arpeggios" />
         <activity android:name=".Grade7RegularScales" />
         <activity android:name=".Grade7Activity" />
         <activity android:name=".Grade8Arpeggios" />
