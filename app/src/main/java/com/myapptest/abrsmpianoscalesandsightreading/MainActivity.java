@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     //Button button = findViewById(R.id.button);
 
     //TODO: DARK MODE, SETTING SAVING, CODE OPTIMIZATION (.equals for strings), BUILTIN METRONOME
+    //TODO: FIX QUARTER NOTE
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

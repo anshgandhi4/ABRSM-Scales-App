@@ -83,6 +83,7 @@
     <string name="_50">50 𝅗𝅥</string>
     <string name="_46">46 𝅗𝅥</string>
     <string name="_88_q">88 ♩</string>
+    <string name="_76_q">76 ♩</string>
 
     <string name="_4_octaves">4 Octaves</string>
     <string name="_3_octaves">3 Octaves</string>
@@ -105,6 +106,7 @@
     <string name="f">F</string>
     <string name="f_sharp">F♯</string>
     <string name="g">G</string>
+    <string name="g_sharp">G♯</string>
     <string name="g_flat_f_sharp">G♭/F♯</string>
     <string name="a_sharp_c_sharp">A♯/C♯</string>
     <string name="a_flat_d">A♭/D</string>
