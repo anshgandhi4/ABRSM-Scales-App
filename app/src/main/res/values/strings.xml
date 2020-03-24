@@ -55,18 +55,23 @@
     <string name="dominant_sevenths">Dominant Sevenths</string>
     <string name="diminished_sevenths">Diminished Sevenths</string>
     <string name="regular_scales">Regular Scales</string>
+
     <string name="harmonic">Harmonic</string>
     <string name="major">Major</string>
     <string name="melodic">Melodic</string>
     <string name="minor">Minor</string>
+
     <string name="both_hands">Both Hands</string>
     <string name="left_hand">Left Hand</string>
     <string name="right_hand">Right Hand</string>
+
     <string name="legato">Legato</string>
     <string name="staccato">Staccato</string>
+
     <string name="root_position">Root</string>
     <string name="first_inversion">First</string>
     <string name="second_inversion">Second</string>
+
     <string name="_88">88 𝅗𝅥</string>
     <string name="_80">80 𝅗𝅥</string>
     <string name="_76">76 𝅗𝅥</string>
@@ -77,8 +82,12 @@
     <string name="_52">52 𝅗𝅥</string>
     <string name="_50">50 𝅗𝅥</string>
     <string name="_46">46 𝅗𝅥</string>
+    <string name="_88_q">88 ♩</string>
+
     <string name="_4_octaves">4 Octaves</string>
+    <string name="_3_octaves">3 Octaves</string>
     <string name="_2_octaves">2 Octaves</string>
+
     <string name="a">A</string>
     <string name="a_flat">A♭</string>
     <string name="a_flat_g_sharp">A♭/G♯</string>
@@ -98,6 +107,7 @@
     <string name="g">G</string>
     <string name="g_flat_f_sharp">G♭/F♯</string>
     <string name="a_sharp_c_sharp">A♯/C♯</string>
+    <string name="a_flat_d">A♭/D</string>
     <string name="blank"> </string>
 
     <string name="go_to_grade_8">Go To Grade 8</string>
@@ -109,6 +119,7 @@
     <string name="go_to_grade_2">Go To Grade 2</string>
     <string name="go_to_grade_1">Go To Grade 1</string>
     <string name="randomize_scales">Randomize Scales</string>
+
     <string name="pref_key">preferenceKeys</string>
     <string name="pref_grade">gradeKey</string>
     <string name="pref_sors">sorsKey</string>

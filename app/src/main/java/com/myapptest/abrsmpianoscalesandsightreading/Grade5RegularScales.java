@@ -9,13 +9,13 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class Grade6RegularScales extends AppCompatActivity {
+public class Grade5RegularScales extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grade6_regular_scales);
-        int scaleType = Grade6Scales.getType();
+        setContentView(R.layout.activity_grade5_regular_scales);
+        int scaleType = Grade5Scales.getType();
 
         TextView scaleText = findViewById(R.id.scaleText);
         TextView keyText = findViewById(R.id.keyText);
@@ -39,28 +39,12 @@ public class Grade6RegularScales extends AppCompatActivity {
             staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
         }
 
-        if (scaleType == R.string.staccato_scales) {
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            legatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            bothText.setTextColor(getResources().getColor(R.color.colorPrimary));
-        }
-
         if (scaleType == R.string.contrary_motion_scales) {
             lengthText.setText(R.string._2_octaves);
             melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
             leftText.setTextColor(getResources().getColor(R.color.colorPrimary));
             rightText.setTextColor(getResources().getColor(R.color.colorPrimary));
             staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-        }
-
-        if (scaleType == R.string.staccato_scales_in_thirds) {
-            lengthText.setText(R.string._2_octaves);
-            speedText.setText(R.string._52);
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            legatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            bothText.setTextColor(getResources().getColor(R.color.colorPrimary));
         }
 
         if (scaleType == R.string.chromatic_scales) {
@@ -81,26 +65,18 @@ public class Grade6RegularScales extends AppCompatActivity {
         }
 
         if (scaleType == R.string.arpeggios) {
-            speedText.setText(R.string._50);
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-        }
-
-        if (scaleType == R.string.diminished_sevenths) {
-            speedText.setText(R.string._50);
-            majorText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
+            speedText.setText(R.string._88_q);
             melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
             staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
         }
     }
 
-    public void goToGrade6(View view) {
-        Intent grade6Intent = new Intent(this, Grade6Activity.class);
-        startActivity(grade6Intent);
+    public void goToGrade5(View view) {
+        Intent grade5Intent = new Intent(this, Grade5Activity.class);
+        startActivity(grade5Intent);
     }
 
-    public void reset6() {
+    public void reset5() {
         TextView keyText = findViewById(R.id.keyText);
         TextView speedText = findViewById(R.id.speedText);
         TextView lengthText = findViewById(R.id.lengthText);
@@ -117,8 +93,8 @@ public class Grade6RegularScales extends AppCompatActivity {
         TextView staccatoText = findViewById(R.id.staccatoText);
 
         keyText.setText(R.string.blank);
-        speedText.setText(R.string._76);
-        lengthText.setText(R.string._4_octaves);
+        speedText.setText(R.string._63);
+        lengthText.setText(R.string._3_octaves);
 
         majorText.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
         harmonicText.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -141,7 +117,7 @@ public class Grade6RegularScales extends AppCompatActivity {
     }
 
     public void randomize(View view) {
-        int scaleType = Grade6Scales.getType();
+        int scaleType = Grade5Scales.getType();
         TextView keyText = findViewById(R.id.keyText);
         TextView speedText = findViewById(R.id.speedText);
         TextView lengthText = findViewById(R.id.lengthText);
@@ -154,7 +130,7 @@ public class Grade6RegularScales extends AppCompatActivity {
         TextView legatoText = findViewById(R.id.legatoText);
         TextView staccatoText = findViewById(R.id.staccatoText);
 
-        reset6();
+        reset5();
 
         Random randint = new Random();
         int value;
@@ -169,6 +145,7 @@ public class Grade6RegularScales extends AppCompatActivity {
             if (value == 0) {majorText.setTypeface(null,Typeface.BOLD);}
             else if (value == 1) {harmonicText.setTypeface(null,Typeface.BOLD);}
             else {melodicText.setTypeface(null,Typeface.BOLD);}
+            //TODO: ADD HARMONIC/MELODIC TO SETTINGS
 
             value = randint.nextInt(4);
             leftText.setTypeface(null,Typeface.NORMAL);
@@ -193,26 +170,6 @@ public class Grade6RegularScales extends AppCompatActivity {
             else {keyText.setText(R.string.a_flat_g_sharp);}
         }
 
-        if (scaleType == R.string.staccato_scales) {
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            legatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            bothText.setTextColor(getResources().getColor(R.color.colorPrimary));
-
-            value = randint.nextInt(2);
-            if (value == 0) {leftText.setTypeface(null,Typeface.NORMAL);}
-            else {rightText.setTypeface(null,Typeface.NORMAL);}
-
-            value = randint.nextInt(2);
-            if (SaveSettings.getG12()) {
-                if (value == 0) {keyText.setText(R.string.e);}
-                else {keyText.setText(R.string.b_flat);}
-            } else {
-                if (value == 0) {keyText.setText(R.string.a);}
-                else {keyText.setText(R.string.e_flat);}
-            }
-        }
-
         if (scaleType == R.string.contrary_motion_scales) {
             lengthText.setText(R.string._2_octaves);
             melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
@@ -226,27 +183,12 @@ public class Grade6RegularScales extends AppCompatActivity {
 
             value = randint.nextInt(2);
             if (SaveSettings.getG12()) {
-                if (value == 0) {keyText.setText(R.string.e);}
+                if (value == 0) {keyText.setText(R.string.f_sharp);}
                 else {keyText.setText(R.string.b_flat);}
             } else {
-                if (value == 0) {keyText.setText(R.string.a);}
-                else {keyText.setText(R.string.e_flat);}
+                if (value == 0) {keyText.setText(R.string.f);}
+                else {keyText.setText(R.string.d_flat_c_sharp);}
             }
-        }
-
-        if (scaleType == R.string.staccato_scales_in_thirds) {
-            lengthText.setText(R.string._2_octaves);
-            speedText.setText(R.string._52);
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            legatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            bothText.setTextColor(getResources().getColor(R.color.colorPrimary));
-
-            value = randint.nextInt(2);
-            if (value == 0) {leftText.setTypeface(null,Typeface.NORMAL);}
-            else {rightText.setTypeface(null,Typeface.NORMAL);}
-
-            keyText.setText(R.string.c);
         }
 
         if (scaleType == R.string.chromatic_scales) {
@@ -287,11 +229,11 @@ public class Grade6RegularScales extends AppCompatActivity {
             rightText.setTextColor(getResources().getColor(R.color.colorPrimary));
             staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
 
-            keyText.setText(R.string.a_sharp_c_sharp);
+            keyText.setText(R.string.a_flat_d);
         }
 
         if (scaleType == R.string.arpeggios) {
-            speedText.setText(R.string._50);
+            speedText.setText(R.string._88_q);
             melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
             staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
 
@@ -320,26 +262,6 @@ public class Grade6RegularScales extends AppCompatActivity {
             else if (value == 9) {keyText.setText(R.string.g_flat_f_sharp);}
             else if (value == 10) {keyText.setText(R.string.g);}
             else {keyText.setText(R.string.a_flat_g_sharp);}
-        }
-
-        if (scaleType == R.string.diminished_sevenths) {
-            speedText.setText(R.string._50);
-            majorText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            harmonicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            melodicText.setTextColor(getResources().getColor(R.color.colorPrimary));
-            staccatoText.setTextColor(getResources().getColor(R.color.colorPrimary));
-
-            value = randint.nextInt(4);
-            leftText.setTypeface(null,Typeface.NORMAL);
-            rightText.setTypeface(null,Typeface.NORMAL);
-            bothText.setTypeface(null,Typeface.NORMAL);
-            if (value == 0) {leftText.setTypeface(null,Typeface.BOLD);}
-            else if (value == 1) {rightText.setTypeface(null,Typeface.BOLD);}
-            else {bothText.setTypeface(null,Typeface.BOLD);}
-
-            value = randint.nextInt(2);
-            if (value == 0) {keyText.setText(R.string.b);}
-            else {keyText.setText(R.string.c_sharp);}
         }
     }
 }

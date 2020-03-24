@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Grade6RegularScales">
+    tools:context=".Grade5RegularScales">
 
     <Button
         android:id="@+id/generateRegularScalesButton2"
@@ -27,14 +27,14 @@
         app:layout_constraintTop_toBottomOf="@+id/legatoText" />
 
     <Button
-        android:id="@+id/goBack6Button"
+        android:id="@+id/goBack5Button"
         android:layout_width="0dp"
         android:layout_height="36dp"
         android:background="@color/colorPrimary"
-        android:onClick="goToGrade6"
+        android:onClick="goToGrade5"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
-        android:text="@string/go_to_grade_6"
+        android:text="@string/go_to_grade_5"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
@@ -188,7 +188,7 @@
         android:id="@+id/lengthText"
         android:layout_width="0dp"
         android:layout_height="26dp"
-        android:text="@string/_4_octaves"
+        android:text="@string/_3_octaves"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
@@ -201,7 +201,7 @@
         android:id="@+id/speedText"
         android:layout_width="0dp"
         android:layout_height="26dp"
-        android:text="@string/_76"
+        android:text="@string/_63"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"

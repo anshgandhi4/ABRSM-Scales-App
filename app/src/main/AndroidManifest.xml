@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Grade6RegularScales"></activity>
+        <activity android:name=".Grade5RegularScales"></activity>
+        <activity android:name=".Grade1Activity" />
+        <activity android:name=".Grade2Activity" />
+        <activity android:name=".Grade3Activity" />
+        <activity android:name=".Grade4Activity" />
+        <activity android:name=".Grade5Activity" />
+        <activity android:name=".Grade6RegularScales" />
         <activity android:name=".Grade6Activity" />
         <activity android:name=".Grade7Arpeggios" />
         <activity android:name=".Grade7RegularScales" />
