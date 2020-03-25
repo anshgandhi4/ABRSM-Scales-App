@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Grade1Activity">
+    tools:context=".Grade2Activity">
 
     <Button
         android:id="@+id/regularScalesButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_height="28dp"
         android:background="@color/colorPrimary"
         android:onClick="regularScales"
         android:paddingLeft="4dp"
@@ -29,7 +28,7 @@
     <Button
         android:id="@+id/contraryMotionScalesButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="28dp"
         android:background="@color/colorPrimary"
         android:onClick="contraryMotionScales"
         android:paddingLeft="4dp"
@@ -47,7 +46,7 @@
     <Button
         android:id="@+id/brokenChordsButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="28dp"
         android:background="@color/colorPrimary"
         android:onClick="brokenChords"
         android:paddingLeft="4dp"

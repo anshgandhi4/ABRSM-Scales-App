@@ -55,6 +55,7 @@
     <string name="dominant_sevenths">Dominant Sevenths</string>
     <string name="diminished_sevenths">Diminished Sevenths</string>
     <string name="regular_scales">Regular Scales</string>
+    <string name="broken_chords">Broken Chords</string>
 
     <string name="harmonic">Harmonic</string>
     <string name="major">Major</string>
@@ -86,10 +87,15 @@
     <string name="_80_q">80 ♩</string>
     <string name="_76_q">76 ♩</string>
     <string name="_69_q">69 ♩</string>
+    <string name="_66_q">66 ♩</string>
+    <string name="_63_q">63 ♩</string>
+    <string name="_60_q">60 ♩</string>
+    <string name="_46_dq">46 ♩.</string>
 
     <string name="_4_octaves">4 Octaves</string>
     <string name="_3_octaves">3 Octaves</string>
     <string name="_2_octaves">2 Octaves</string>
+    <string name="_1_octave">1 Octave</string>
 
     <string name="a">A</string>
     <string name="a_flat">A♭</string>
