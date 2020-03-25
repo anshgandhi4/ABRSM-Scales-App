@@ -15,7 +15,7 @@ public class Grade5RegularScales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grade5_regular_scales);
-        int scaleType = Grade5Scales.getType();
+        int scaleType = ScaleType.getType();
 
         TextView scaleText = findViewById(R.id.scaleText);
         TextView keyText = findViewById(R.id.keyText);
@@ -117,7 +117,7 @@ public class Grade5RegularScales extends AppCompatActivity {
     }
 
     public void randomize(View view) {
-        int scaleType = Grade5Scales.getType();
+        int scaleType = ScaleType.getType();
         TextView keyText = findViewById(R.id.keyText);
         TextView speedText = findViewById(R.id.speedText);
         TextView lengthText = findViewById(R.id.lengthText);

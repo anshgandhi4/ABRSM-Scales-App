@@ -84,27 +84,35 @@ public class SettingsActivity extends AppCompatActivity implements NavigationVie
             Intent homeIntent = new Intent(this, MainActivity.class);
             startActivity(homeIntent);
         } else if (id == R.id.nav_g1) {
+            ScaleType.setGrade(1);
             Intent g1Intent = new Intent(this, Grade1Activity.class);
             startActivity(g1Intent);
         } else if (id == R.id.nav_g2) {
+            ScaleType.setGrade(2);
             Intent g2Intent = new Intent(this, Grade2Activity.class);
             startActivity(g2Intent);
         } else if (id == R.id.nav_g3) {
+            ScaleType.setGrade(3);
             Intent g3Intent = new Intent(this, Grade3Activity.class);
             startActivity(g3Intent);
         } else if (id == R.id.nav_g4) {
+            ScaleType.setGrade(4);
             Intent g4Intent = new Intent(this, Grade4Activity.class);
             startActivity(g4Intent);
         } else if (id == R.id.nav_g5) {
+            ScaleType.setGrade(5);
             Intent g5Intent = new Intent(this, Grade5Activity.class);
             startActivity(g5Intent);
         } else if (id == R.id.nav_g6) {
+            ScaleType.setGrade(6);
             Intent g6Intent = new Intent(this, Grade6Activity.class);
             startActivity(g6Intent);
         } else if (id == R.id.nav_g7) {
+            ScaleType.setGrade(7);
             Intent g7Intent = new Intent(this, Grade7Activity.class);
             startActivity(g7Intent);
         } else if (id == R.id.nav_g8) {
+            ScaleType.setGrade(8);
             Intent g8Intent = new Intent(this, Grade8Activity.class);
             startActivity(g8Intent);
         } else if (id == R.id.nav_settings) {

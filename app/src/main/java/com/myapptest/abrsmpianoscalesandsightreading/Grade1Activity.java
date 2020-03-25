@@ -14,19 +14,19 @@ public class Grade1Activity extends AppCompatActivity {
     }
 
     public void regularScales(View view) {
-        Grade1Scales.setType(R.string.regular_scales);
+        ScaleType.setType(R.string.regular_scales);
         Intent regularScalesIntent = new Intent(this, Grade1RegularScales.class);
         startActivity(regularScalesIntent);
     }
 
     public void contraryMotionScales(View view) {
-        Grade1Scales.setType(R.string.contrary_motion_scales);
+        ScaleType.setType(R.string.contrary_motion_scales);
         Intent regularScalesIntent = new Intent(this, Grade1RegularScales.class);
         startActivity(regularScalesIntent);
     }
 
     public void brokenChords(View view) {
-        Grade1Scales.setType(R.string.broken_chords);
+        ScaleType.setType(R.string.broken_chords);
         Intent regularScalesIntent = new Intent(this, Grade1RegularScales.class);
         startActivity(regularScalesIntent);
     }

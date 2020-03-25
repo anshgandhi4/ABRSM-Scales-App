@@ -14,25 +14,25 @@ public class Grade4Activity extends AppCompatActivity {
     }
 
     public void regularScales(View view) {
-        Grade4Scales.setType(R.string.regular_scales);
+        ScaleType.setType(R.string.regular_scales);
         Intent regularScalesIntent = new Intent(this, Grade4RegularScales.class);
         startActivity(regularScalesIntent);
     }
 
     public void contraryMotionScales(View view) {
-        Grade4Scales.setType(R.string.contrary_motion_scales);
+        ScaleType.setType(R.string.contrary_motion_scales);
         Intent regularScalesIntent = new Intent(this, Grade4RegularScales.class);
         startActivity(regularScalesIntent);
     }
 
     public void chromaticScales(View view) {
-        Grade4Scales.setType(R.string.chromatic_scales);
+        ScaleType.setType(R.string.chromatic_scales);
         Intent regularScalesIntent = new Intent(this, Grade4RegularScales.class);
         startActivity(regularScalesIntent);
     }
 
     public void arpeggios(View view) {
-        Grade4Scales.setType(R.string.arpeggios);
+        ScaleType.setType(R.string.arpeggios);
         Intent regularScalesIntent = new Intent(this, Grade4RegularScales.class);
         startActivity(regularScalesIntent);
     }

@@ -15,7 +15,7 @@ public class Grade6RegularScales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grade6_regular_scales);
-        int scaleType = Grade6Scales.getType();
+        int scaleType = ScaleType.getType();
 
         TextView scaleText = findViewById(R.id.scaleText);
         TextView keyText = findViewById(R.id.keyText);
@@ -141,7 +141,7 @@ public class Grade6RegularScales extends AppCompatActivity {
     }
 
     public void randomize(View view) {
-        int scaleType = Grade6Scales.getType();
+        int scaleType = ScaleType.getType();
         TextView keyText = findViewById(R.id.keyText);
         TextView speedText = findViewById(R.id.speedText);
         TextView lengthText = findViewById(R.id.lengthText);
