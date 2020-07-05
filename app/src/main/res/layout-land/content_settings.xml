@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2020 Ansh Gandhi
+  ~
+  ~ This file is part of Piano Scales Randomizer.
+  ~
+  ~ Piano Scales Randomizer is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Piano Scales Randomizer is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Original Author: Ansh Gandhi
+  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original App: Waiting for Publish
+  ~
+  ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
+  -->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,77 +33,6 @@
     tools:context=".SettingsActivity"
     tools:showIn="@layout/app_bar_settings">
 
-    <Switch
-        android:id="@+id/groupSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="100dp"
-        android:foregroundTint="@color/colorAccent"
-        android:shadowColor="@color/colorAccent"
-        android:showText="true"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:textOff="@string/group1"
-        android:textOn="@string/group2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:thumbTint="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/g12Text"
-        tools:checked="true" />
-
-    <Switch
-        android:id="@+id/ssSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="100dp"
-        android:foregroundTint="@color/colorAccent"
-        android:shadowColor="@color/colorAccent"
-        android:showText="true"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:textOff="@string/scales"
-        android:textOn="@string/sightreading"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:thumbTint="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ssText" />
-
-    <Switch
-        android:id="@+id/dmSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="100dp"
-        android:foregroundTint="@color/colorAccent"
-        android:shadowColor="@color/colorAccent"
-        android:showText="true"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:textOff="@string/light"
-        android:textOn="@string/dark"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:thumbTint="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dmText"
-        tools:checked="true" />
-
     <TextView
         android:id="@+id/settingsText"
         android:layout_width="0dp"
@@ -89,61 +42,192 @@
         android:text="@string/settings"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ssText"
+        android:id="@+id/g12Text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="25dp"
-        android:text="@string/sorstext"
+        android:text="@string/g12"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
-
-    <TextView
-        android:id="@+id/g12Text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="25dp"
-        android:text="@string/g12text"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ssSwitch" />
-
-    <TextView
-        android:id="@+id/dmText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="25dp"
-        android:text="@string/light_mode_or_dark_mode"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/groupSwitch" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+
+    <RadioGroup
+        android:id="@+id/g12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g12Text">
+
+        <RadioButton
+            android:id="@+id/natural12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:checked="true"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/natural"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+
+        <RadioButton
+            android:id="@+id/harmonic12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/harmonic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+
+        <RadioButton
+            android:id="@+id/melodic12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/melodic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/g345Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/g345"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g12" />
+
+    <RadioGroup
+        android:id="@+id/g345"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g345Text">
+
+        <RadioButton
+            android:id="@+id/harmonic345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:checked="true"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/harmonic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+
+        <RadioButton
+            android:id="@+id/melodic345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/melodic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/g567Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/g567"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g345" />
+
+    <RadioGroup
+        android:id="@+id/g567"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g567Text">
+
+        <RadioButton
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:checked="true"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/group1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+
+        <RadioButton
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent"
+            android:paddingStart="18dp"
+            android:paddingEnd="24dp"
+            android:text="@string/group2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:onClick="saveData" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>

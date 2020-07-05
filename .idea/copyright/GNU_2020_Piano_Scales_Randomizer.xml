@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright © 2020 Ansh Gandhi&#10;&#10;This file is part of Piano Scales Randomizer.&#10;&#10;Piano Scales Randomizer is free software: you can redistribute it and/or modify&#10;it under the terms of the GNU General Public License as published by&#10;the Free Software Foundation, either version 3 of the License, or&#10;(at your option) any later version.&#10;&#10;Piano Scales Randomizer is distributed in the hope that it will be useful,&#10;but WITHOUT ANY WARRANTY; without even the implied warranty of&#10;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#10;GNU General Public License for more details.&#10;&#10;You should have received a copy of the GNU General Public License&#10;along with Piano Scales Randomizer.  If not, see &lt;https://www.gnu.org/licenses/&gt;.&#10;&#10;Original Author: Ansh Gandhi&#10;Original Source Code: &lt;https://github.com/anshipie/ABRSM-Scales-App/&gt;&#10;Original App: Waiting for Publish&#10;&#10;EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES." />
+    <option name="myName" value="GNU 2020 Piano Scales Randomizer" />
+  </copyright>
+</component>

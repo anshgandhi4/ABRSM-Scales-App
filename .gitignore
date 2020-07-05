@@ -9,5 +9,7 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+/app/releases
 /captures
 .externalNativeBuild
+/appkey.jks

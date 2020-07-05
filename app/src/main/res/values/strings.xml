@@ -1,10 +1,31 @@
+<!--
+  ~ Copyright © 2020 Ansh Gandhi
+  ~
+  ~ This file is part of Piano Scales Randomizer.
+  ~
+  ~ Piano Scales Randomizer is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Piano Scales Randomizer is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Original Author: Ansh Gandhi
+  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original App: Waiting for Publish
+  ~
+  ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
+  -->
 <resources>
-    <string name="app_name">ABRSM Piano Scales and Sightreading</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">ABRSM</string>
-    <string name="nav_header_subtitle">https://abrsm.org</string>
-    <string name="nav_header_desc">Navigation header</string>
+    <string name="app_name">Piano Scales Randomizer</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
@@ -27,17 +48,17 @@
     <string name="activity_g7">Grade7Activity</string>
     <string name="activity_g8">Grade8Activity</string>
 
-    <string name="sightreading">Sightreading</string>
-    <string name="scales">Scales</string>
-    <string name="welcome_string">Welcome to the Unofficial Android ABRSM Piano Exam Scales and Sightreading Trainer!</string>
-    <string name="abrsm_logo">ABRSM Logo</string>
-    <string name="grade8">Shortcut to Grade 8</string>
+    <string name="welcome_string">Welcome to Piano Scales Randomizer!</string>
+    <string name="instructions_string">Use the Navigation Bar on the Left to Start Practicing!</string>
+    <string name="app_logo">App Logo</string>
+    <string name="settings_shortcut">Shortcut to Settings</string>
     <string name="settings">Settings</string>
+    <string name="g12">Grades 1/2 Minor Scale</string>
+    <string name="g345">Grades 3/4/5 Minor Scale</string>
+    <string name="g567">Grades 5/6/7 Group</string>
     <string name="group1">Group 1</string>
     <string name="group2">Group 2</string>
-    <string name="g12text">Group 1 or Group 2?</string>
-    <string name="sorstext">Scales or Sightreading?</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings">Settings</string>
 
     <string name="legato_scales_in_thirds">Legato Scales In Thirds</string>
     <string name="staccato_scales_in_thirds">Staccato Scales In Thirds</string>
@@ -57,8 +78,9 @@
     <string name="regular_scales">Regular Scales</string>
     <string name="broken_chords">Broken Chords</string>
 
-    <string name="harmonic">Harmonic</string>
     <string name="major">Major</string>
+    <string name="natural">Natural</string>
+    <string name="harmonic">Harmonic</string>
     <string name="melodic">Melodic</string>
     <string name="minor">Minor</string>
 
@@ -128,13 +150,6 @@
     <string name="go_to_grade_3">Go To Grade 3</string>
     <string name="go_to_grade_2">Go To Grade 2</string>
     <string name="go_to_grade_1">Go To Grade 1</string>
+    <string name="go_home">Go Home</string>
     <string name="randomize_scales">Randomize Scales</string>
-
-    <string name="pref_key">preferenceKeys</string>
-    <string name="pref_grade">gradeKey</string>
-    <string name="pref_sors">sorsKey</string>
-    <string name="pref_g12">g12Key</string>
-    <string name="dark">Dark</string>
-    <string name="light">Light</string>
-    <string name="light_mode_or_dark_mode">Light Mode or Dark Mode?</string>
 </resources>

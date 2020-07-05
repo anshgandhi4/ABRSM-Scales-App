@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2020 Ansh Gandhi
+  ~
+  ~ This file is part of Piano Scales Randomizer.
+  ~
+  ~ Piano Scales Randomizer is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Piano Scales Randomizer is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Original Author: Ansh Gandhi
+  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original App: Waiting for Publish
+  ~
+  ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
+  -->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/legatoText" />
+        app:layout_constraintTop_toBottomOf="@+id/bothText" />
 
     <Button
         android:id="@+id/goBack5Button"
@@ -127,34 +151,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/leftText"
         app:layout_constraintTop_toBottomOf="@+id/melodicText" />
-
-    <TextView
-        android:id="@+id/legatoText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="@string/legato"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/staccatoText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bothText" />
-
-    <TextView
-        android:id="@+id/staccatoText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="@string/staccato"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/legatoText"
-        app:layout_constraintTop_toBottomOf="@+id/leftText" />
 
     <TextView
         android:id="@+id/scaleText"

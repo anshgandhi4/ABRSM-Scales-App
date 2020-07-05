@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2020 Ansh Gandhi
+  ~
+  ~ This file is part of Piano Scales Randomizer.
+  ~
+  ~ Piano Scales Randomizer is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Piano Scales Randomizer is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Original Author: Ansh Gandhi
+  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original App: Waiting for Publish
+  ~
+  ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
+  -->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,9 +32,28 @@
     tools:context=".Grade8Activity">
 
     <Button
+        android:id="@+id/goHomeButton"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="goHome"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/go_home"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diminishedSeventhsButton" />
+
+    <Button
         android:id="@+id/regularScalesButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="regularScales"
         android:text="@string/regular_scales"
@@ -26,7 +69,7 @@
     <Button
         android:id="@+id/scalesThirdApartButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="scalesAThirdApart"
         android:text="@string/scales_a_third_apart"
@@ -42,7 +85,7 @@
     <Button
         android:id="@+id/scalesSixthApartButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="scalesASixthApart"
         android:text="@string/scales_a_sixth_apart"
@@ -58,7 +101,7 @@
     <Button
         android:id="@+id/legatoScalesInThirdsButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="legatoScalesInThirds"
         android:text="@string/legato_scales_in_thirds"
@@ -74,7 +117,7 @@
     <Button
         android:id="@+id/chromaticScalesMinorThirdApartButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="chromaticScalesAMinorThirdApart"
         android:text="@string/chromatic_scales_a_minor_third_apart"
@@ -90,7 +133,7 @@
     <Button
         android:id="@+id/chromaticScaleMinorThirdsButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="chromaticScaleInMinorThirds"
         android:text="@string/chromatic_scale_in_minor_thirds"
@@ -106,7 +149,7 @@
     <Button
         android:id="@+id/wholeToneScaleButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="wholeToneScale"
         android:text="@string/whole_tone_scale"
@@ -122,7 +165,7 @@
     <Button
         android:id="@+id/arpeggiosButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="arpeggios"
         android:text="@string/arpeggios"
@@ -138,7 +181,7 @@
     <Button
         android:id="@+id/dominantSeventhsButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="dominantSevenths"
         android:text="@string/dominant_sevenths"
@@ -154,7 +197,7 @@
     <Button
         android:id="@+id/diminishedSeventhsButton"
         android:layout_width="0dp"
-        android:layout_height="28dp"
+        android:layout_height="24dp"
         android:background="@color/colorPrimary"
         android:onClick="diminishedSevenths"
         android:text="@string/diminished_sevenths"
