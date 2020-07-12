@@ -18,7 +18,7 @@
  *
  * Original Author: Ansh Gandhi
  * Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
- * Original App: Waiting for Publish
+ * Original App: <https://play.google.com/store/apps/details?id=com.anshgandhi.pianoscalesrandomizer>
  *
  * EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
  */
