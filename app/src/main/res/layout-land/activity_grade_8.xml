@@ -18,7 +18,7 @@
   ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
   ~
   ~ Original Author: Ansh Gandhi
-  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original Source Code: <https://github.com/anshgandhi4/ABRSM-Scales-App/>
   ~ Original App: <https://play.google.com/store/apps/details?id=com.anshgandhi.pianoscalesrandomizer>
   ~
   ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
@@ -48,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diminishedSeventhsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/diminishedSeventhsButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/regularScalesButton"
@@ -64,7 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/scalesThirdApartButton"
@@ -80,7 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regularScalesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/regularScalesButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/scalesSixthApartButton"
@@ -96,7 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scalesThirdApartButton" />
+        app:layout_constraintTop_toBottomOf="@+id/scalesThirdApartButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/legatoScalesInThirdsButton"
@@ -112,7 +116,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scalesSixthApartButton" />
+        app:layout_constraintTop_toBottomOf="@+id/scalesSixthApartButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/chromaticScalesMinorThirdApartButton"
@@ -128,7 +133,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/legatoScalesInThirdsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/legatoScalesInThirdsButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/chromaticScaleMinorThirdsButton"
@@ -144,7 +150,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chromaticScalesMinorThirdApartButton" />
+        app:layout_constraintTop_toBottomOf="@+id/chromaticScalesMinorThirdApartButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/wholeToneScaleButton"
@@ -160,7 +167,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chromaticScaleMinorThirdsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/chromaticScaleMinorThirdsButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/arpeggiosButton"
@@ -176,7 +184,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wholeToneScaleButton" />
+        app:layout_constraintTop_toBottomOf="@+id/wholeToneScaleButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/dominantSeventhsButton"
@@ -192,7 +201,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arpeggiosButton" />
+        app:layout_constraintTop_toBottomOf="@+id/arpeggiosButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/diminishedSeventhsButton"
@@ -208,5 +218,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dominantSeventhsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/dominantSeventhsButton"
+        android:gravity="center_horizontal" />
 </android.support.constraint.ConstraintLayout>

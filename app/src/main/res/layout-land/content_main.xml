@@ -18,7 +18,7 @@
   ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
   ~
   ~ Original Author: Ansh Gandhi
-  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original Source Code: <https://github.com/anshgandhi4/ABRSM-Scales-App/>
   ~ Original App: <https://play.google.com/store/apps/details?id=com.anshgandhi.pianoscalesrandomizer>
   ~
   ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
@@ -45,7 +45,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/button"
@@ -89,5 +90,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:gravity="center_horizontal" />
 </android.support.constraint.ConstraintLayout>

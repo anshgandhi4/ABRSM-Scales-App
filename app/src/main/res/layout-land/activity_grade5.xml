@@ -18,7 +18,7 @@
   ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
   ~
   ~ Original Author: Ansh Gandhi
-  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original Source Code: <https://github.com/anshgandhi4/ABRSM-Scales-App/>
   ~ Original App: <https://play.google.com/store/apps/details?id=com.anshgandhi.pianoscalesrandomizer>
   ~
   ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
@@ -48,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arpeggiosButton" />
+        app:layout_constraintTop_toBottomOf="@+id/arpeggiosButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/regularScalesButton"
@@ -66,7 +67,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/contraryMotionScalesButton"
@@ -84,7 +86,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regularScalesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/regularScalesButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/chromaticScalesButton"
@@ -102,7 +105,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contraryMotionScalesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/contraryMotionScalesButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/chromaticContraryMotionScalesButton"
@@ -120,7 +124,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chromaticScalesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/chromaticScalesButton"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/arpeggiosButton"
@@ -138,6 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chromaticContraryMotionScalesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/chromaticContraryMotionScalesButton"
+        android:gravity="center_horizontal" />
 
 </android.support.constraint.ConstraintLayout>

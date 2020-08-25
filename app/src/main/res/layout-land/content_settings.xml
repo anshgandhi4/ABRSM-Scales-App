@@ -18,7 +18,7 @@
   ~ along with Piano Scales Randomizer.  If not, see <https://www.gnu.org/licenses/>.
   ~
   ~ Original Author: Ansh Gandhi
-  ~ Original Source Code: <https://github.com/anshipie/ABRSM-Scales-App/>
+  ~ Original Source Code: <https://github.com/anshgandhi4/ABRSM-Scales-App/>
   ~ Original App: <https://play.google.com/store/apps/details?id=com.anshgandhi.pianoscalesrandomizer>
   ~
   ~ EVERYTHING ABOVE THIS LINE MUST BE KEPT AS IS UNDER GNU GPL LICENSE RULES.
@@ -46,7 +46,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/g12Text"
@@ -63,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsText"
+        android:gravity="center_horizontal" />
 
     <RadioGroup
         android:id="@+id/g12"
@@ -87,7 +89,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
 
         <RadioButton
             android:id="@+id/harmonic12"
@@ -101,7 +106,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
 
         <RadioButton
             android:id="@+id/melodic12"
@@ -115,7 +123,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
     </RadioGroup>
 
     <TextView
@@ -133,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/g12" />
+        app:layout_constraintTop_toBottomOf="@+id/g12"
+        android:gravity="center_horizontal" />
 
     <RadioGroup
         android:id="@+id/g345"
@@ -157,7 +169,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
 
         <RadioButton
             android:id="@+id/melodic345"
@@ -171,7 +186,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
     </RadioGroup>
 
     <TextView
@@ -189,7 +207,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/g345" />
+        app:layout_constraintTop_toBottomOf="@+id/g345"
+        android:gravity="center_horizontal" />
 
     <RadioGroup
         android:id="@+id/g567"
@@ -213,7 +232,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
 
         <RadioButton
             android:id="@+id/group2"
@@ -227,7 +249,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="12sp"
-            android:onClick="saveData" />
+            android:onClick="saveData"
+            android:paddingLeft="18dp"
+            android:paddingRight="24dp"
+            android:gravity="center_horizontal" />
     </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
